@@ -1,0 +1,106 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Our variables
+$base-font-family: "PT Sans", Tahoma, Geneva, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #DDD4EA;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+// Minima also includes a mixin for defining media queries.
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+
+// Import partials from the `minima` theme.
+@import "minima";
+
+body {
+  background-image: url(./pink-fractal.jpg);
+  background-repeat:no-repeat;
+  background-position: center center;
+
+  background-color: rgba(231, 231, 231, 0.3);
+  font-family: "PT Mono", "Courier New", Courier, monospace;
+  color: #333;
+}
+
+.site-header {
+  .site-title {
+    color: #FAF1F0;
+  }
+  .page-link {
+    color: #FAF1F0;
+  }
+  background-image: url(./background-dark.png);
+  background-color: #221B2B;
+}
+
+.page-content {
+  background-image: url(./background.png);
+  background-color: rgba(231, 231, 231, 0.3);
+}
+
+.site-footer {
+  background-image: url(./background-dark.png);
+  background-color: #221B2B;
+  color: #FAF1F0;
+  .footer-col-wrapper {
+    color: #FAF1F0;
+  }
+  .footer-heading {
+    background-color: #dc4d4d;
+  }
+}
+
+
+.post-meta {
+  font-family: "PT Mono", "Courier New", Courier, monospace;
+}
+
+.post-content {
+  padding: 2.5%;
+  font-family: "PT Mono", "Courier New", Courier, monospace;
+  border: 1px solid rgba(51,51,51,0.1);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.icon > svg path {
+  // fill: #280D04;
+  fill: #FAF1F0;
+}
+
+a {
+  color: #1F0806;
+  text-decoration: none;
+  &:visited {
+    color: #3A201D;
+  }
+  &:hover {
+    color: #5C150D;
+    text-decoration: none;
+  }
+}
